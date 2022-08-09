@@ -28,5 +28,5 @@ bus.Wait()
 
 ## License
 ***
-The MIT License (MIT) - see LICENSE.md for more details
+The MIT License (MIT) - see LICENSE for more details
 
