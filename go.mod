@@ -1,3 +1,3 @@
-module junyaU/evbus
+module github.com/junyaU/evbus
 
 go 1.19
