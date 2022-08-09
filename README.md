@@ -6,21 +6,24 @@ This package is a simple asynchronous event bus.
 go get github.com/junyaU/evbus
 ```
 ## Usage
-```
-import github.com/junyaU/evbus
+```go
+package main
+import "github.com/junyaU/evbus"
 
-bus := evbus.New()
-
-fn := func(v int) {
-    fmt.Printf("%d\n", a + b)
+func main() {
+    bus := evbus.New()
+    
+    fn := func(v string) {
+        fmt.Printf("%d\n", v)
+    }
+    
+    bus.Subscribe("topic", fn)
+    
+    bus.Publish("topic", "hello")
+    bus.Publish("topic", "world")
+    
+    bus.Wait()
 }
-
-bus.Subscribe("topic", fn)
-
-bus.Publish("topic", 10)
-bus.Publish("topic", 15)
-
-bus.Wait()
 ```
 
 ## License
