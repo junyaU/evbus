@@ -8,6 +8,7 @@ go get github.com/junyaU/evbus
 ## Usage
 ```go
 package main
+
 import "github.com/junyaU/evbus"
 
 func main() {
